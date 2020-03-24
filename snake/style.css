@@ -3,7 +3,7 @@
 * {
 
   font-family: 'Baloo 2', cursive;
-  color: #1ad8e5;
+  color: #2078DF;
 }
 
 body {
@@ -46,6 +46,17 @@ main {
   background-color: #DF2078;
   border-radius: 50%;
   transform: scale(.8, .8);
+}
+
+.game-over {
+  color: #2078DF;
+  background-color: #aeec79;
+  border-radius: 0.2rem;
+  padding: .5rem;
+}
+
+button {
+  border-radius: .2rem;
 }
 
 /* 
