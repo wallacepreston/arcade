@@ -14,10 +14,6 @@ body {
   height: 100vh;
 }
 
-body > * {
-  margin-bottom: 2rem;
-}
-
 main {
   display: grid;
   grid-template: repeat(12, 1fr) / repeat(12, 1fr);
