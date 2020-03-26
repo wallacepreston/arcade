@@ -96,6 +96,22 @@ function renderBoard() {
   }
 }
 
+function renderButtons() {
+  const controls = $('#controls');
+  controls.empty();
+  for(const direction of [LEFT, UP, RIGHT, DOWN]){
+    const directionWord = direction.slice(5)
+    const button = $(`
+      <button class="${directionWord.toLowerCase()}">${directionWord}</button>
+    `)
+      .click(function(){
+        turnSnake(direction)
+      });
+    controls.append(button);
+  }
+
+}
+
 const getRandomBoardIndex = (boardSize = 12) => {
   return Math.floor(Math.random() * boardSize);
 }
@@ -174,6 +190,7 @@ function tick(){
 $('#prompt').on('click', '.start-game', function(){
   buildInitialState();
   changePhaseTo(PLAYING);
+  renderButtons();
   addAndRenderAll();
 })
 

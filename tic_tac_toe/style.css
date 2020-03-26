@@ -9,13 +9,15 @@
 main {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-  width: 50vmin;
-  height: 50vmin;
+  width: 60vh;
+  height: 60vh;
 }
 
 .cell {
+  width: 20vh;
+  height: 20vh;
   text-align: center;
-  font-size: 3rem;
+  font-size: 12vh;
   display: grid;
   place-items: center;
 }
